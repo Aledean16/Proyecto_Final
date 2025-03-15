@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de Envíos</title>
+</head>
+
+<body>
+    <section id="remitente">
+        <h2>Datos del Remitente</h2>
+        <label for="nombreRemitente">Nombre:</label>
+        <input type="text" id="nombreRemitente"><br>
+        <label for="ciudadRemitente">Ciudad:</label>
+        <input type="text" id="ciudadRemitente"><br>
+    </section>
+
+    <section id="destinatario">
+        <h2>Datos del Destinatario</h2>
+        <label for="nombreDestinatario">Nombre:</label>
+        <input type="text" id="nombreDestinatario"><br>
+        <label for="ciudadDestinatario">Ciudad:</label>
+        <input type="text" id="ciudadDestinatario"><br>
+    </section>
+
+    <section id="mercancia">
+        <h2>Datos de la Mercancía</h2>
+        <label for="descripcion">Descripción:</label>
+        <input type="text" id="descripcion"><br>
+        <label for="peso">Peso:</label>
+        <input type="text" id="peso"><br>
+    </section>
+
+    <table id="registroTabla">
+        <thead>
+            <tr>
+                <th>Nombre Remitente</th>
+                <th>Ciudad Remitente</th>
+                <th>Nombre Destinatario</th>
+                <th>Ciudad Destinatario</th>
+                <th>Descripción</th>
+                <th>Peso</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <button id="registrar">Registrar</button>
+
+    <script src="ProyFinal.js"></script>
+
+    <section id="consulta">
+        <h2>Consulta de Datos</h2>
+        <label for="estatus">Estatus:</label>
+        <select id="estatus">
+            <option value="En progreso">En progreso</option>
+            <option value="Rechazado">Rechazado</option>
+        </select><br>
+        <label for="comentarios">Comentarios:</label>
+        <textarea id="comentarios"></textarea><br>
+        <button id="actualizar">Actualizar</button>
+    </section>
+
+    <label for="filtroEstatus">Filtrar por Estatus:</label>
+    <select id="filtroEstatus">
+        <option value="Todos">Todos</option>
+        <option value="Por hacer">Por hacer</option>
+        <option value="En progreso">En progreso</option>
+        <option value="Rechazado">Rechazado</option>
+    </select>
+
+    <script src="ProyFinal.js"></script>
+
+</body>
+
+</html>
